@@ -1,7 +1,7 @@
 :root {
     --red: #c10000;
     --soft-pink: #f1dedd;
-    --bg-qray: #f7f5f2
+    --bg-gray: #f7f5f2;
     --white: #fff;
     --dark: #000;
 }
@@ -38,5 +38,5 @@ a {
 }
 /* Your style start here */
 .bg_gray{
-    background: var(--bg-qray);
+    background: var(--bg-gray);
 }
