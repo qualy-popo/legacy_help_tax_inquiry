@@ -52,6 +52,17 @@ a {
     background: var(--bg-gray);
 }
 
+
+/* ========================================
+inherit_specialist_sec start =============== */
+
+.inherit_specialist_sec{
+    padding: 60px 0;
+}
+
+.over_txt_block {
+    text-align: center;
+}
 /* common styles */
 
 .d_flx {
