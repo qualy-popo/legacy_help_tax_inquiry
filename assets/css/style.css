@@ -382,21 +382,31 @@ inherit_specialist_sec end =============== */
     margin: 60px 0;
 }
 .audit_ttl{
+    width: fit-content;
     font-size: 40px;
     font-weight: 400;
     text-align: center;
     position: relative;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
 }
 .audit_ttl::before{
     content: "";
     position: absolute;
+    bottom: 15px;
+    left: -80px;
     background: url(../img/audit_left_line.png);
     width: 34px;
     height: 58px;
 
 }
 .audit_ttl::after{
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: -80px;
+    background: url(../img/audit_right_line.png);
+    width: 34px;
+    height: 58px;
 }
 .audit_content{
     font-size: 16px;
@@ -484,6 +494,20 @@ inherit_specialist_sec end =============== */
 
 .tax_audit_txt {
     margin: 60px 0 30px;
+}
+
+@media screen and (max-width : 640px) {
+    .invest_volun_container{
+        display: block;
+    }
+    .compulsory_container,
+    .voluntary_container{
+        width: 100%;
+    }
+    .compulsory_container .message_box::before{
+        width: 67.5px;
+        height: 35px;
+    }
 }
 
 /* tax audit end */
