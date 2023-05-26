@@ -12,6 +12,13 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 
 body {
     font-family: "Meiryo", "ヒラギノ角ゴ Pro W3", Helvetica, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, "\30e1\30a4\30ea\30aa", sans-serif;
@@ -37,15 +44,6 @@ a {
     margin: 0 auto;
 }
 
-.container {
-    width: 980px;
-    margin: 0 auto;
-}
-
-.sub_container {
-    width: 920px;
-    margin: 0 auto;
-}
 
 /* Your style start here */
 .bg_gray {
@@ -58,6 +56,16 @@ inherit_specialist_sec start =============== */
 
 .inherit_specialist_sec {
     padding: 60px 0;
+}
+
+.inherit_specialist_sec .container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.inherit_specialist_sec .sub_container {
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 .over_txt_block {
@@ -80,10 +88,10 @@ inherit_specialist_sec start =============== */
 
 .inherit_flex_list .list_01,
 .inherit_flex_list .list_02 {
-    width: 430px;
     background: #fff;
     padding: 40px 0;
     border-radius: 10px;
+    width: calc((100% - 40px)/2);
 }
 
 .inherit_flex_list .img_left {
@@ -119,7 +127,7 @@ inherit_specialist_sec start =============== */
 }
 
 .tax_inquiry_mv {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin-top: 100px;
     position: relative;
 }
@@ -275,6 +283,11 @@ inherit_specialist_sec start =============== */
 
     .tax_inquiry_mv::after {
         background: url(../img/tax-mv-sp.png);
+        /* width: min(50%, calc((375px /2))); */
+
+        width: 50%;
+        height: 100%;
+        background-size: cover;
     }
 
     .inner_tax_mv .mv_title p:first-child {
@@ -299,22 +312,27 @@ inherit_specialist_sec start =============== */
     }
 
     .mv-sp {
-        max-width: 315px;
+        max-width: 380px;
+        padding: 25px 20px 40px 20px;
     }
 
     .info_btns .mv_btn {
         width: 120px;
         height: 32px;
+        font-size: 14px;
     }
 
     .info_btns {
+        margin-top: 20px;
+        margin-bottom: 20px;
         gap: 20px;
+
     }
 
     .info_btns .mv_btn::before {
         width: 7px;
         height: 9px;
-        bottom: -9px;
+        bottom: -7px;
         left: 15px;
         border-radius: 5px;
     }
