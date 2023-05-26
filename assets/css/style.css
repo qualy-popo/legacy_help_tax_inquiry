@@ -56,7 +56,7 @@ a {
 /* ========================================
 inherit_specialist_sec start =============== */
 
-.inherit_specialist_sec{
+.inherit_specialist_sec {
     padding: 60px 0;
 }
 
@@ -66,26 +66,27 @@ inherit_specialist_sec start =============== */
     font-size: 20px;
 }
 
-.head_ttl{
+.head_ttl {
     text-align: center;
     font-size: 40px;
     margin: 40px 0;
 }
 
-.inherit_flex_list{
+.inherit_flex_list {
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
 }
 
-.inherit_flex_list .list_01,.inherit_flex_list .list_02{
+.inherit_flex_list .list_01,
+.inherit_flex_list .list_02 {
     width: 430px;
     background: #fff;
     padding: 40px 0;
     border-radius: 10px;
 }
 
-.inherit_flex_list .img_left{
+.inherit_flex_list .img_left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,8 +114,12 @@ inherit_specialist_sec start =============== */
 
 /* mv start */
 
+.d_sp {
+    display: none;
+}
+
 .tax_inquiry_mv {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin-top: 100px;
     position: relative;
 }
@@ -147,6 +152,10 @@ inherit_specialist_sec start =============== */
     margin-bottom: 45px;
 }
 
+.inner_tax_mv .mv_title p:first-child {
+    margin-left: -10px;
+}
+
 .inner_tax_mv .mv_title .title_red {
     font-size: 40px;
     color: var(--red);
@@ -169,6 +178,7 @@ inherit_specialist_sec start =============== */
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: pointer;
 }
 
 .info_btns .mv_btn::before {
@@ -241,15 +251,72 @@ inherit_specialist_sec start =============== */
     }
 }
 
-@media screen and (max-width :700px) {
+@media screen and (max-width :720px) {
     .inner_tax_mv .mv_info {
-        max-width: 250px;
+        max-width: 280px;
     }
 
     .tax_inquiry_mv::after {
 
-        width: 55%;
+        width: 50%;
 
+    }
+}
+
+@media screen and (max-width : 640px) {
+    .d_pc {
+        display: none;
+    }
+
+    .d_sp {
+        display: block;
+    }
+
+
+    .tax_inquiry_mv::after {
+        background: url(../img/tax-mv-sp.png);
+    }
+
+    .inner_tax_mv .mv_title p:first-child {
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    .inner_tax_mv .mv_title .title_red {
+        font-size: 20px;
+    }
+
+    .inner_tax_mv .mv_title {
+        margin-bottom: 0;
+    }
+
+    .tax_inquiry_mv .inner_tax_mv {
+        padding-block: 68px;
+    }
+
+    .mv-sp .mv-info {
+        font-size: 14px;
+    }
+
+    .mv-sp {
+        max-width: 315px;
+    }
+
+    .info_btns .mv_btn {
+        width: 120px;
+        height: 32px;
+    }
+
+    .info_btns {
+        gap: 20px;
+    }
+
+    .info_btns .mv_btn::before {
+        width: 7px;
+        height: 9px;
+        bottom: -9px;
+        left: 15px;
+        border-radius: 5px;
     }
 }
 
