@@ -12,6 +12,13 @@
     box-sizing: border-box;
 }
 
+img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 
 body {
     font-family: "Meiryo", "ヒラギノ角ゴ Pro W3", Helvetica, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, "\30e1\30a4\30ea\30aa", sans-serif;
@@ -37,15 +44,6 @@ a {
     margin: 0 auto;
 }
 
-.container {
-    width: 980px;
-    margin: 0 auto;
-}
-
-.sub_container {
-    width: 920px;
-    margin: 0 auto;
-}
 
 /* Your style start here */
 .bg_gray {
@@ -58,6 +56,16 @@ inherit_specialist_sec start =============== */
 
 .inherit_specialist_sec{
     padding: 60px 0;
+}
+
+.inherit_specialist_sec .container{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.inherit_specialist_sec .sub_container{
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 .over_txt_block {
@@ -79,10 +87,10 @@ inherit_specialist_sec start =============== */
 }
 
 .inherit_flex_list .list_01,.inherit_flex_list .list_02{
-    width: 430px;
     background: #fff;
     padding: 40px 0;
     border-radius: 10px;
+    width: calc((100% - 40px)/2);
 }
 
 .inherit_flex_list .img_left{
