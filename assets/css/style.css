@@ -384,3 +384,125 @@ inherit_specialist_sec end =============== */
 }
 
 /* tax audit end */
+
+
+
+/* audits come section start */
+
+.audits-come-sec {
+    display: block;
+    background-color: var(--bg-gray);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.audits-come-sec::before {
+    position: absolute;
+    content: '';
+    width: 260px;
+    height: 60px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.audits-come-sec .audits-come-inner {
+    padding: 110px 15px 60px 15px;
+    /* border: 1px solid red; */
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.audits-come-sub-inner {
+    padding: 0px 15px;
+    /* outline: 1px solid blue; */
+}
+
+.audits-come-sub-inner .audit-come-title {
+    font-size: 40px;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.audits-come-sub-inner ol {
+    list-style-type: disc;
+    font-size: 16px;
+    /* font-weight: bold; */
+    margin-top: 65px;
+}
+
+.audits-com-triangles {
+    display: flex;
+    gap: 15px;
+    padding-right: 42px;
+}
+
+.audits-com-triangles .trg {
+    font-size: 20px;
+    font-weight: bold;
+    /* border: 1px solid blue; */
+    position: relative;
+    width: calc((100% - 42px)/4);
+    padding-left: 50px;
+    padding: 50px 0px 45px 50px;
+    vertical-align: middle;
+    background-color: #fff;
+    /* clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%); */
+}
+
+.audits-com-triangles .trg:nth-child(2) {
+    background-color: #f2dddd;
+}
+
+.audits-com-triangles .trg:nth-child(3) {
+    background-color: #e4bdbb;
+}
+
+.audits-com-triangles .trg:nth-child(4) {
+    background-color: #d9a3a3;
+}
+
+.audits-com-triangles .trg:not(:first-child) {
+    padding-left: 85px;
+}
+
+.audits-com-triangles .trg::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 42px;
+    background-color: inherit;
+    right: -41px;
+    top: 0;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    z-index: 10;
+}
+
+.audits-com-triangles .trg:not(:first-child)::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 42px;
+    background-color: var(--bg-gray);
+    left: 0px;
+    top: 0;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+.audits-com-triangles .trg span {
+    font-size: 16px;
+    /* border: 1px solid red; */
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: -35px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* audits come section end */
