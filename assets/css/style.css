@@ -6,13 +6,23 @@
     --dark: #000;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-ul,ol{
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Meiryo", "ヒラギノ角ゴ Pro W3", Helvetica, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, "\30e1\30a4\30ea\30aa", sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+ul,
+ol {
     list-style-type: none;
 }
 
@@ -20,23 +30,99 @@ a {
     text-decoration: none;
 }
 
-.m-w1480{
+.m-w1480 {
     max-width: 1480px;
     margin: 0 auto;
 }
-.m-w1280{
+
+.m-w1280 {
     max-width: 1280px;
     margin: 0 auto;
 }
+
 .container {
     width: 980px;
     margin: 0 auto;
 }
+
 .sub_container {
     width: 920px;
     margin: 0 auto;
 }
+
 /* Your style start here */
-.bg_gray{
+.bg_gray {
     background: var(--bg-gray);
 }
+
+/* common styles */
+
+.d-flx {
+    display: flex;
+}
+
+
+/* common styles  */
+
+
+/* mv start */
+
+.tax-inquiry-mv {
+    /* outline: 1px solid red; */
+    margin-top: 100px;
+    background: url(../img/tax-mv.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: min(642px, 50%) auto;
+}
+
+.tax-inquiry-mv .inner-tax-mv {
+    max-width: 960px;
+    padding-inline: 20px;
+    padding-block: 80px;
+    margin: 0 auto;
+    /* outline: 1px solid blue; */
+}
+
+.inner-tax-mv .mv-title {
+    font-size: 20px;
+}
+
+.inner-tax-mv .mv-title .title-red {
+    font-size: 40px;
+    color: var(--red);
+}
+
+.inner-tax-mv .info-btns {
+    align-items: center;
+    gap: 20px;
+}
+
+.info-btns .mv-btn {
+    color: var(--white);
+    background-color: var(--red);
+    width: 200px;
+    height: 65px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.info-btns .mv-btn::before {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 18px;
+    left: 30px;
+    bottom: -17px;
+    background: var(--red);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.inner-tax-mv .mv-info {
+    max-width: 535px;
+}
+
+/* mv end */
