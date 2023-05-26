@@ -40,3 +40,11 @@ a {
 .bg_gray{
     background: var(--bg-gray);
 }
+
+
+/* ========================================
+inherit_specialist_sec start =============== */
+
+.inherit_specialist_sec{
+    padding: 60px 0;
+}
