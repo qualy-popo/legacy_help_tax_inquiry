@@ -129,6 +129,23 @@ inherit_specialist_sec start =============== */
     color: var(--red);
 }
 
+.point_list .upper_txt{
+    max-width: 260px;
+    height: 260px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.point_list .upper_txt p{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: bold;
+}
+
 .upper_red_txt .txt_01,.upper_red_txt .txt_02{
     line-height: 2;
 }
@@ -136,6 +153,23 @@ inherit_specialist_sec start =============== */
 .upper_red_txt .txt_01 span,.upper_red_txt .txt_02 span{
     padding: 0 10px;
     background: linear-gradient(0deg, #f2dddd 50%, transparent 0%);
+}
+
+.point_list .upper_txt{
+    max-width: 260px;
+    height: 260px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.point_list .upper_txt p{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: bold;
 }
 
 @media screen and (max-width:768px){
