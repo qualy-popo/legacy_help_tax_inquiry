@@ -40,3 +40,13 @@ a {
 .bg_gray{
     background: var(--bg-gray);
 }
+
+/* tax mv style start */
+.tax-inquiry-mv .mv_right_img{
+    background: url(/assets/img/tax_inquary_mv.png) no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 511px;
+    margin-left: auto;
+}
+/* tax mv style end */
