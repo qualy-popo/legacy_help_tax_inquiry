@@ -65,7 +65,45 @@ inherit_specialist_sec start =============== */
 
 .over_txt_block {
     text-align: center;
+    font-weight: 600;
+    font-size: 20px;
 }
+
+.head_ttl{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+.inherit_flex_list{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.inherit_flex_list .list_01,.inherit_flex_list .list_02{
+    width: 430px;
+    background: #fff;
+    padding: 40px 0;
+    border-radius: 10px;
+}
+
+.inherit_flex_list .img_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.inherit_flex_list .p_txt {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ========================================
+inherit_specialist_sec start =============== */
+
 /* common styles */
 
 .d-flx {
