@@ -262,3 +262,42 @@ inherit_specialist_sec end =============== */
 }
 
 /* mv end */
+
+/* tax audit start */
+.tax_audit_wrapper{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 80px 15px;
+}
+.audit_btn_gp{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+.audit_btn_gp .audit_btn{
+    /* width: 22%; */
+    flex-grow: 1;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0 15px;
+    color: var(--white);
+    background: var(--red);
+    border-radius: 10px;
+}
+.audit_btn_gp .audit_btn::after{
+    content: "";
+    position: absolute;
+    background: url(../img/small_down_arrow.png) no-repeat;
+    width: 15px;
+    height: 10px;
+    right: 20px;
+    top: 28px;
+}
+.tax_audit_txt{
+    margin: 60px 0 30px;
+}
+/* tax audit end */
