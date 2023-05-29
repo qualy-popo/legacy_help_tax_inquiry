@@ -612,6 +612,31 @@ inherit_specialist_sec end =============== */
   height: 100px;
 }
 
+@media screen and (max-width: 920px) {
+  .compulsory_container .message_box::before{
+    bottom: -90px;
+    left: 0px;
+    width: 100px;
+    height: 55px;
+    background-size: contain;
+  }
+  .voluntary_container .message_box::after {
+    width: 100px;
+    height: 70px;
+    right: 0;
+    bottom: -100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .invest_volun_container .message_ttl{
+    font-size: 22px;
+  }
+  .invest_volun_container .message_content{
+    font-size: 18px;
+    letter-spacing: -0.4px;
+  }
+}
+
 @media screen and (max-width : 640px) {
   .tax_audit_wrapper{
     padding: 40px 15px;
