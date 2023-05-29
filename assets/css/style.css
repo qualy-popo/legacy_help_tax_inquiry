@@ -869,7 +869,7 @@ inherit_specialist_sec start =============== */
         width: 66px;
         height: 50px;
         background-size: contain;
-        right: -41px;
+        right: -31px;
         bottom: -60px;
     }
 
@@ -1352,3 +1352,49 @@ inherit_specialist_sec start =============== */
 }
 
 /* example section end */
+
+/* tax right person start */
+.right_person_wrapper {
+  max-width: 920px;
+  margin: 0 auto 80px;
+  padding: 0 15px;
+}
+.right_person_ttl{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.right_person_txt{
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.9;
+}
+.right_person_img{
+  margin: 40px 0;
+}
+.taxpayer_txt{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 640px) {
+  .right_person_ttl{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .right_person_txt{
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .right_person_img{
+    margin: 20px 0;
+  }
+  .taxpayer_txt{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+}
+/* tax right person end */
