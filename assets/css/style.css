@@ -1398,3 +1398,9 @@ inherit_specialist_sec start =============== */
   }
 }
 /* tax right person end */
+/* price section start */
+.price_ttl{
+  font-size: 40px;
+  text-align: center;
+}
+/* price section end */
