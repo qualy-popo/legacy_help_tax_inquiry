@@ -52,7 +52,7 @@ a {
 /* ========================================
 inherit_specialist_sec start =============== */
 
-.sp {
+  .sp {
     display: none;
   }
   
@@ -154,6 +154,8 @@ inherit_specialist_sec start =============== */
   .point_list .upper_txt p {
       text-align: center;
       font-weight: bold;
+      font-size: 20px;
+      line-height: 1.4;
   }
   
   .point_list .lower_txt {
@@ -195,6 +197,12 @@ inherit_specialist_sec start =============== */
   .upper_red_txt .txt_02 span {
     padding: 0 10px;
     background: linear-gradient(0deg, #f2dddd 50%, transparent 0%);
+  }
+
+  .point_03 .sp_txt {
+    font-size: 14px;
+    color: #000 !important;
+    font-weight: bold;
   }
   
   @media screen and (max-width: 912px) {
@@ -275,6 +283,7 @@ inherit_specialist_sec start =============== */
   
     .point_list .upper_txt p{
       font-size:14px;
+      line-height: 1.2;
     }
   
     .point_list .upper_txt .no {
@@ -298,6 +307,24 @@ inherit_specialist_sec start =============== */
     .point_list .lower_txt p span{
       font-size:14px;
     }
+
+    .point_03 .sp_txt{
+        font-size: 8px;
+        color: #000 !important;
+        font-weight: bold;
+    }
+  }
+
+  @media screen and (max-width: 375px){
+    .point_list .upper_txt {
+        width: 135px;
+        height: 135px;
+    }
+    
+    .point_list .lower_txt{
+        bottom: 28px;
+    }
+    
   }
   
   /* ========================================
@@ -1219,6 +1246,10 @@ inherit_specialist_sec start =============== */
 /* audits come section end */
 
 /* Ph Block */
+.contact_box{
+    padding: 0 20px;
+}
+
 .contact_box .ph_block {
     max-width: 740px;
     padding: 20px 20px;
@@ -1321,3 +1352,44 @@ inherit_specialist_sec start =============== */
     background: url(../img/right_arr_white.png) top center no-repeat;
     background-size: cover;
 }
+
+@media  screen and (max-width:640px) {
+    .contact_box .ph_block{
+        margin: 0px auto 20px auto;
+    }
+    
+    .contact_box .ph_block .ph_txt{
+          font-size: 16px;
+    }
+    
+    .contact_box .ph_block .ph_list .ph_num{
+        font-size: 25px;
+          letter-spacing: 0.32px;
+    }
+    
+    .contact_box .ph_block .ph_list img {
+        width: 32px;
+        margin-right: 16px;
+    }
+    
+    .contact_box .ph_block .ph_date {
+        font-size: 11px;
+    }
+
+    .contact_box .seizenform_btn a{
+        font-size: 14px;
+        padding: 15px 50px 15px 70px;
+    }
+    
+    .contact_box .seizenform_btn a:before{
+        width: 20px;
+        height: 15px;
+    }
+    
+    .contact_box .seizenform_btn a:after{
+        width: 7px;
+        height: 11px;
+    }
+}
+
+/* Ph Block */
