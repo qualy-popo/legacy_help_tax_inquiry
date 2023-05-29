@@ -48,11 +48,10 @@ a {
 .bg_gray {
     background: var(--bg-gray);
 }
-
 /* ========================================
 inherit_specialist_sec start =============== */
 
-  .sp {
+.sp {
     display: none;
   }
   
@@ -198,7 +197,7 @@ inherit_specialist_sec start =============== */
     padding: 0 10px;
     background: linear-gradient(0deg, #f2dddd 50%, transparent 0%);
   }
-
+  
   .point_03 .sp_txt {
     font-size: 14px;
     color: #000 !important;
@@ -307,14 +306,14 @@ inherit_specialist_sec start =============== */
     .point_list .lower_txt p span{
       font-size:14px;
     }
-
+  
     .point_03 .sp_txt{
         font-size: 8px;
         color: #000 !important;
         font-weight: bold;
     }
   }
-
+  
   @media screen and (max-width: 375px){
     .point_list .upper_txt {
         width: 135px;
@@ -555,28 +554,28 @@ inherit_specialist_sec start =============== */
 
 /* tax audit start */
 .tax_audit_wrapper {
-  max-width: 920px;
-  margin: 0 auto 80px;
-  padding: 80px 15px;
+    max-width: 920px;
+    margin: 0 auto 80px;
+    padding: 80px 15px;
 }
 
 .audit_btn_gp {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .audit_btn_gp .audit_btn {
-  width: calc((100% - 30px) / 4);
-  position: relative;
-  font-size: 20px;
-  text-align: center;
-  padding: 20px 0 15px;
-  color: var(--white);
-  background: var(--red);
-  border-radius: 10px;
+    width: calc((100% - 30px) / 4);
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0 15px;
+    color: var(--white);
+    background: var(--red);
+    border-radius: 10px;
 }
 
 .audit_btn_gp .audit_btn::after {
@@ -588,10 +587,12 @@ inherit_specialist_sec start =============== */
     right: 20px;
     top: 28px;
 }
-.tax_audit_txt{
+
+.tax_audit_txt {
     margin: 60px 0;
 }
-.audit_ttl{
+
+.audit_ttl {
     width: fit-content;
     font-size: 40px;
     font-weight: 400;
@@ -599,7 +600,8 @@ inherit_specialist_sec start =============== */
     position: relative;
     margin: 0 auto 30px;
 }
-.audit_ttl::before{
+
+.audit_ttl::before {
     content: "";
     position: absolute;
     bottom: 15px;
@@ -609,7 +611,8 @@ inherit_specialist_sec start =============== */
     height: 58px;
 
 }
-.audit_ttl::after{
+
+.audit_ttl::after {
     content: "";
     position: absolute;
     bottom: 15px;
@@ -618,260 +621,288 @@ inherit_specialist_sec start =============== */
     width: 34px;
     height: 58px;
 }
-.audit_content{
+
+.audit_content {
     font-size: 16px;
     text-align: center;
 }
-.audit_content > span{
+
+.audit_content>span {
     font-size: 20px;
     color: var(--red);
 }
+
 .invest_volun_container {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
 }
+
 .compulsory_container,
 .voluntary_container {
-  width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
 }
 
 .invest_volun_container .message_box {
-  position: relative;
-  max-width: 360px;
-  padding: 20px 0;
-  border-radius: 10px;
-  background: #faf7f7;
-  border-bottom: 5px solid var(--red);
-  border-right: 5px solid var(--red);
+    position: relative;
+    max-width: 360px;
+    padding: 20px 0;
+    border-radius: 10px;
+    background: #faf7f7;
+    border-bottom: 5px solid var(--red);
+    border-right: 5px solid var(--red);
 }
 
 .invest_volun_container .message_box .left::after {
-  position: absolute;
-  content: "";
-  width: 22px;
-  height: 25px;
-  left: 60px;
-  bottom: -23px;
-  background: #faf7f7;
-  clip-path: polygon(0 0, 0% 100%, 100% 0);
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 25px;
+    left: 60px;
+    bottom: -23px;
+    background: #faf7f7;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
 }
 
 .invest_volun_container .message_box .left::before {
-  position: absolute;
-  content: "";
-  width: 8px;
-  height: 30px;
-  bottom: -28px;
-  left: 65px;
-  background-color: var(--red);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-  transform: rotate(42deg);
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 30px;
+    bottom: -28px;
+    left: 65px;
+    background-color: var(--red);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    transform: rotate(42deg);
 }
 
 .invest_volun_container .message_box .right::after {
-  position: absolute;
-  content: "";
-  width: 22px;
-  height: 25px;
-  right: 60px;
-  bottom: -23px;
-  background: #faf7f7;
-  clip-path: polygon(0 0, 100% 100%, 100% 0);
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 25px;
+    right: 60px;
+    bottom: -23px;
+    background: #faf7f7;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
 .invest_volun_container .message_box .right::before {
-  position: absolute;
-  content: "";
-  width: 6px;
-  height: 21px;
-  bottom: -25px;
-  right: 56px;
-  background-color: var(--red);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 21px;
+    bottom: -25px;
+    right: 56px;
+    background-color: var(--red);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
 }
 
 .invest_volun_container .message_ttl {
-  width: 200px;
-  padding: 5px 0 0;
-  margin: 0 auto 15px;
-  text-align: center;
-  background: var(--red);
-  border-radius: 15px;
-  color: var(--white);
-  font-size: 24px;
+    width: 200px;
+    padding: 5px 0 0;
+    margin: 0 auto 15px;
+    text-align: center;
+    background: var(--red);
+    border-radius: 15px;
+    color: var(--white);
+    font-size: 24px;
 }
 
 .invest_volun_container .message_content {
-  font-size: 20px;
-  text-align: center;
+    font-size: 20px;
+    text-align: center;
 }
 
-.invest_volun_container .message_content > span {
-  font-weight: bold;
+.invest_volun_container .message_content>span {
+    font-weight: bold;
 }
 
 .compulsory_container .message_box::before {
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: -100px;
-  left: -65px;
-  background: url(../img/compulsory_img.png);
-  width: 135px;
-  height: 70px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -65px;
+    background: url(../img/compulsory_img.png);
+    width: 135px;
+    height: 70px;
 }
 
-.compulsory_container .message_box{
-  margin-left: auto;
+.compulsory_container .message_box {
+    margin-left: auto;
 }
 
 .voluntary_container .message_box::after {
-  display: block;
-  content: "";
-  position: absolute;
-  right: -82px;
-  bottom: -120px;
-  background: url(../img/voluntary_img.png);
-  width: 132px;
-  height: 100px;
+    display: block;
+    content: "";
+    position: absolute;
+    right: -82px;
+    bottom: -120px;
+    background: url(../img/voluntary_img.png);
+    width: 132px;
+    height: 100px;
 }
 
 @media screen and (max-width: 920px) {
-  .compulsory_container .message_box::before{
-    bottom: -90px;
-    left: 0px;
-    width: 100px;
-    height: 55px;
-    background-size: contain;
-  }
-  .voluntary_container .message_box::after {
-    width: 100px;
-    height: 70px;
-    right: 0;
-    bottom: -100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .invest_volun_container .message_ttl{
-    font-size: 22px;
-  }
-  .invest_volun_container .message_content{
-    font-size: 18px;
-    letter-spacing: -0.4px;
-  }
+    .compulsory_container .message_box::before {
+        bottom: -90px;
+        left: 0px;
+        width: 100px;
+        height: 55px;
+        background-size: contain;
+    }
+
+    .voluntary_container .message_box::after {
+        width: 100px;
+        height: 70px;
+        right: 0;
+        bottom: -100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .invest_volun_container .message_ttl {
+        font-size: 22px;
+    }
+
+    .invest_volun_container .message_content {
+        font-size: 18px;
+        letter-spacing: -0.4px;
+    }
 }
 
 @media screen and (max-width : 640px) {
-  .tax_audit_wrapper{
-    padding: 40px 15px;
-    margin: 0 auto 40px;
-  }
-  .audit_btn_gp{
-    gap: 25px;
-    flex-wrap: wrap;
-  }
-  .audit_btn_gp .audit_btn{
-    width: calc((100% - 25px) / 2);
-    font-size: 14px;
-    padding: 10px 0 7.5px;
-  }
-  .audit_btn_gp .audit_btn::after{
-    width: 7.5px;
-    height: 5px;
-    right: 20px;
-    top: 17px;
-    background-size: contain;
-  }
-  .tax_audit_txt{
-    margin: 30px 0;
-  }
-  .audit_ttl{
-    font-size: 20px;
-    margin: 0 auto 15px;
-  }
-  .audit_ttl::before{
-    bottom: 5px;
-    left: -45px;
-    width: 17px;
-    height: 29px;
-  }
-  .audit_ttl::after{
-    bottom: 5px;
-    right: -40px;
-    width: 17px;
-  }
-  .audit_content{
-    font-size: 14px;
-    text-align: left;
-  }
-  .audit_content > span{
-    font-size: 16px;
-  }
-  .invest_volun_container{
-      display: block;
-  }
-  .compulsory_container,
-  .voluntary_container{
-      width: 100%;
-  }
-  .invest_volun_container .message_box{
-    width: 260px;
-    margin: 0 auto;
-    border-bottom: 2.5px solid var(--red);
-    border-right: 2.5px solid var(--red);
-  }
-  .invest_volun_container .message_box .left::before{
-    width: 4px;
-    height: 15px;
-    bottom: -14px;
-    left: 32px;
-  }
-  .invest_volun_container .message_box .left::after{
-    width: 11px;
-    height: 12.5px;
-    left: 30px;
-    bottom: -12px;
-  }
-  .invest_volun_container .message_box .right::before{
-    width: 3px;
-    height: 11px;
-    bottom: -12px;
-    right: 28px;
-  }
-  .invest_volun_container .message_box .right::after{
-    width: 11px;
-    height: 12.5px;
-    right: 30px;
-    bottom: -12px;
-  }
-  .compulsory_container .message_box::before{
-    width: 67.5px;
-    height: 35px;
-    background-size: contain;
-    bottom: -50px;
-    left: -30px;
-  }
-  .voluntary_container{
-    margin-top: 75px;
-  }
-  .voluntary_container .message_box::after{
-    width: 66px;
-    height: 50px;
-    background-size: contain;
-    right: -41px;
-    bottom: -60px;
-  }
-  .invest_volun_container .message_ttl,
-  .invest_volun_container .message_content{
-    font-size: 14px;
-  }
-  .invest_volun_container .message_ttl{
-    width: 100px;
-    margin: 0 auto 15px;
-    border-radius: 7.5px;
-    padding: 5px 0 2px;
-  }
+    .tax_audit_wrapper {
+        padding: 40px 15px;
+        margin: 0 auto 40px;
+    }
+
+    .audit_btn_gp {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .audit_btn_gp .audit_btn {
+        width: calc((100% - 25px) / 2);
+        font-size: 14px;
+        padding: 10px 0 7.5px;
+    }
+
+    .audit_btn_gp .audit_btn::after {
+        width: 7.5px;
+        height: 5px;
+        right: 20px;
+        top: 17px;
+        background-size: contain;
+    }
+
+    .tax_audit_txt {
+        margin: 30px 0;
+    }
+
+    .audit_ttl {
+        font-size: 20px;
+        margin: 0 auto 15px;
+    }
+
+    .audit_ttl::before {
+        bottom: 5px;
+        left: -45px;
+        width: 17px;
+        height: 29px;
+    }
+
+    .audit_ttl::after {
+        bottom: 5px;
+        right: -40px;
+        width: 17px;
+    }
+
+    .audit_content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .audit_content>span {
+        font-size: 16px;
+    }
+
+    .invest_volun_container {
+        display: block;
+    }
+
+    .compulsory_container,
+    .voluntary_container {
+        width: 100%;
+    }
+
+    .invest_volun_container .message_box {
+        width: 260px;
+        margin: 0 auto;
+        border-bottom: 2.5px solid var(--red);
+        border-right: 2.5px solid var(--red);
+    }
+
+    .invest_volun_container .message_box .left::before {
+        width: 4px;
+        height: 15px;
+        bottom: -14px;
+        left: 32px;
+    }
+
+    .invest_volun_container .message_box .left::after {
+        width: 11px;
+        height: 12.5px;
+        left: 30px;
+        bottom: -12px;
+    }
+
+    .invest_volun_container .message_box .right::before {
+        width: 3px;
+        height: 11px;
+        bottom: -12px;
+        right: 28px;
+    }
+
+    .invest_volun_container .message_box .right::after {
+        width: 11px;
+        height: 12.5px;
+        right: 30px;
+        bottom: -12px;
+    }
+
+    .compulsory_container .message_box::before {
+        width: 67.5px;
+        height: 35px;
+        background-size: contain;
+        bottom: -50px;
+        left: -30px;
+    }
+
+    .voluntary_container {
+        margin-top: 75px;
+    }
+
+    .voluntary_container .message_box::after {
+        width: 66px;
+        height: 50px;
+        background-size: contain;
+        right: -31px;
+        bottom: -60px;
+    }
+
+    .invest_volun_container .message_ttl,
+    .invest_volun_container .message_content {
+        font-size: 14px;
+    }
+
+    .invest_volun_container .message_ttl {
+        width: 100px;
+        margin: 0 auto 15px;
+        border-radius: 7.5px;
+        padding: 5px 0 2px;
+    }
 }
 
 /* tax audit end */
@@ -1130,120 +1161,7 @@ inherit_specialist_sec start =============== */
     }
 }
 
-/* audits come section end */
-/* .audits-come-sec {
-  display: block;
-  background-color: var(--bg-gray);
-  margin-bottom: 50px;
-  position: relative;
-}
 
-.audits-come-sec::before {
-  position: absolute;
-  content: "";
-  width: 260px;
-  height: 60px;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  clip-path: polygon(100% 0, 0 0, 50% 100%);
-}
-
-.audits-come-sec .audits-come-inner {
-  padding: 110px 15px 60px 15px;
-
-  max-width: 950px;
-  margin: 0 auto;
-}
-
-.audits-come-sub-inner {
-  padding: 0px 15px;
- 
-}
-
-.audits-come-sub-inner .audit-come-title {
-  font-size: 40px;
-  margin: 0 auto;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.audits-come-sub-inner ol {
-  list-style-type: disc;
-  font-size: 16px;
-  margin-top: 65px;
-}
-
-.audits-com-triangles {
-  display: flex;
-  gap: 15px;
-  padding-right: 42px;
-}
-
-.audits-com-triangles .trg {
-  font-size: 20px;
-  font-weight: bold;
-  position: relative;
-  width: calc((100% - 42px) / 4);
-  padding-left: 50px;
-  padding: 50px 0px 45px 50px;
-  vertical-align: middle;
-  background-color: #fff;
-}
-
-.audits-com-triangles .trg:nth-child(2) {
-  background-color: #f2dddd;
-}
-
-.audits-com-triangles .trg:nth-child(3) {
-  background-color: #e4bdbb;
-}
-
-.audits-com-triangles .trg:nth-child(4) {
-  background-color: #d9a3a3;
-}
-
-.audits-com-triangles .trg:not(:first-child) {
-  padding-left: 85px;
-}
-
-.audits-com-triangles .trg::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 42px;
-  background-color: inherit;
-  right: -41px;
-  top: 0;
-  clip-path: polygon(100% 50%, 0 0, 0 100%);
-  z-index: 10;
-}
-
-.audits-com-triangles .trg:not(:first-child)::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 42px;
-  background-color: var(--bg-gray);
-  left: 0px;
-  top: 0;
-  clip-path: polygon(100% 50%, 0 0, 0 100%);
-}
-
-.audits-com-triangles .trg span {
-  font-size: 16px;
-  position: absolute;
-  display: block;
-  width: 100%;
-  bottom: -35px;
-  text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-
-/* audits come section end */
 
 /* Ph Block */
 .contact_box{
@@ -1393,3 +1311,153 @@ inherit_specialist_sec start =============== */
 }
 
 /* Ph Block */
+
+
+
+/* example section start */
+
+.example_sec {
+    padding: 50px 15px;
+    background-color: var(--bg-gray);
+}
+
+.example_sec_inner {
+    max-width: 920px;
+    padding: 0px 10px 0px 10px;
+    /* outline: 1px solid red; */
+    margin: 0 auto;
+}
+
+.example_sec .exam_ttl {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.example_accordion {
+    margin-top: 40px;
+}
+
+.accor_item {
+    /* border: 1px solid green; */
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.example_accordion .accor_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.accor_title .circle_num {
+    background-color: #d28482;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+
+.accor_title .circle_num span {
+    display: block;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding-top: 5px;
+}
+
+
+
+.accor_title_txt {
+    flex: 1;
+}
+
+.accor_title_txt p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.accor_title_txt span {
+    font-size: 16px;
+}
+
+.accor_inner_content {
+    padding-top: 30px;
+}
+
+.accor_inner_content .instruct {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.instruct .instruct_man {
+    flex-basis: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid royalblue;
+}
+
+.instruct_man p {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+/* example section end */
+
+/* tax right person start */
+.right_person_wrapper {
+  max-width: 920px;
+  margin: 0 auto 80px;
+  padding: 0 15px;
+}
+.right_person_ttl{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.right_person_txt{
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.9;
+}
+.right_person_img{
+  margin: 40px 0;
+}
+.taxpayer_txt{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 640px) {
+  .right_person_ttl{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .right_person_txt{
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .right_person_img{
+    margin: 20px 0;
+  }
+  .taxpayer_txt{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+}
+/* tax right person end */
