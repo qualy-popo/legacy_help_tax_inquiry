@@ -438,15 +438,13 @@ inherit_specialist_sec end =============== */
 .audit_btn_gp {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 3%;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .audit_btn_gp .audit_btn {
-  /* width: 22%; */
-  flex-grow: 1;
+  width: calc((100% - 30px) / 4);
   position: relative;
   font-size: 20px;
   text-align: center;
@@ -503,128 +501,19 @@ inherit_specialist_sec end =============== */
     font-size: 20px;
     color: var(--red);
 }
-.invest_volun_container{
-    display: flex;
-}
-.compulsory_container,
-.voluntary_container{
-    width: 50%;
-}
-.invest_volun_container .message_box{ 
-    position: relative;
-    max-width: 360px;
-    margin: 0 auto;
-    padding: 20px 0;
-    border-radius: 10px;
-    background: #faf7f7;
-    border-bottom: 5px solid var(--red);
-    border-right: 5px solid var(--red);
-}
-.invest_volun_container .message_box .left::after{
-    position: absolute;
-    content: '';
-    width: 22px;
-    height: 25px;
-    left: 60px;
-    bottom: -23px;
-    background: #faf7f7;
-    clip-path: polygon(0 0, 0% 100%, 100% 0);
-}
-.invest_volun_container .message_box .right::after{
-    position: absolute;
-    content: '';
-    width: 22px;
-    height: 25px;
-    right: 60px;
-    bottom: -23px;
-    background: #faf7f7;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
-}
-.invest_volun_container .message_ttl{
-    width: 200px;
-    padding: 5px 0 0;
-    margin: 0 auto 15px;
-    text-align: center;
-    background: var(--red);
-    border-radius: 15px;
-    color: var(--white);
-    font-size: 24px;
-}
-.invest_volun_container .message_content{
-    font-size: 20px;
-    text-align: center;
-}
-.invest_volun_container .message_content > span{
-    font-weight: bold;
-}
-.compulsory_container .message_box::before{
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: -100px;
-    left: -75px;
-    background: url(../img/compulsory_img.png);
-    width: 135px;
-    height: 70px;
-}
-
-.voluntary_container .message_box::after{
-    display: block;
-    content: "";
-    position: absolute;
-    right: -82px;
-    bottom: -120px;
-    background: url(../img/voluntary_img.png);
-    width: 132px;
-    height: 100px;
-}
-
-.tax_audit_txt {
-  margin: 60px 0;
-}
-
-.audit_ttl {
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.audit_ttl::before {
-  content: "";
-  position: absolute;
-  background: url(../img/audit_left_line.png);
-  width: 34px;
-  height: 58px;
-}
-
-.audit_ttl::after {
-}
-
-.audit_content {
-  font-size: 16px;
-  text-align: center;
-}
-
-.audit_content > span {
-  font-size: 20px;
-  color: var(--red);
-}
-
 .invest_volun_container {
   display: flex;
+  gap: 30px;
+  justify-content: space-between;
 }
-
 .compulsory_container,
 .voluntary_container {
-  width: 50%;
+  width: calc((100% - 30px) / 2);
 }
 
 .invest_volun_container .message_box {
   position: relative;
   max-width: 360px;
-  margin: 0 auto;
   padding: 20px 0;
   border-radius: 10px;
   background: #faf7f7;
@@ -702,10 +591,14 @@ inherit_specialist_sec end =============== */
   content: "";
   position: absolute;
   bottom: -100px;
-  left: -75px;
+  left: -65px;
   background: url(../img/compulsory_img.png);
   width: 135px;
   height: 70px;
+}
+
+.compulsory_container .message_box{
+  margin-left: auto;
 }
 
 .voluntary_container .message_box::after {
@@ -719,22 +612,116 @@ inherit_specialist_sec end =============== */
   height: 100px;
 }
 
-.tax_audit_txt {
-  margin: 60px 0 30px;
-}
-
 @media screen and (max-width : 640px) {
-    .invest_volun_container{
-        display: block;
-    }
-    .compulsory_container,
-    .voluntary_container{
-        width: 100%;
-    }
-    .compulsory_container .message_box::before{
-        width: 67.5px;
-        height: 35px;
-    }
+  .tax_audit_wrapper{
+    padding: 40px 15px;
+    margin: 0 auto 40px;
+  }
+  .audit_btn_gp{
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .audit_btn_gp .audit_btn{
+    width: calc((100% - 25px) / 2);
+    font-size: 14px;
+    padding: 10px 0 7.5px;
+  }
+  .audit_btn_gp .audit_btn::after{
+    width: 7.5px;
+    height: 5px;
+    right: 20px;
+    top: 17px;
+    background-size: contain;
+  }
+  .tax_audit_txt{
+    margin: 30px 0;
+  }
+  .audit_ttl{
+    font-size: 20px;
+    margin: 0 auto 15px;
+  }
+  .audit_ttl::before{
+    bottom: 5px;
+    left: -45px;
+    width: 17px;
+    height: 29px;
+  }
+  .audit_ttl::after{
+    bottom: 5px;
+    right: -40px;
+    width: 17px;
+  }
+  .audit_content{
+    font-size: 14px;
+    text-align: left;
+  }
+  .audit_content > span{
+    font-size: 16px;
+  }
+  .invest_volun_container{
+      display: block;
+  }
+  .compulsory_container,
+  .voluntary_container{
+      width: 100%;
+  }
+  .invest_volun_container .message_box{
+    width: 260px;
+    margin: 0 auto;
+    border-bottom: 2.5px solid var(--red);
+    border-right: 2.5px solid var(--red);
+  }
+  .invest_volun_container .message_box .left::before{
+    width: 4px;
+    height: 15px;
+    bottom: -14px;
+    left: 32px;
+  }
+  .invest_volun_container .message_box .left::after{
+    width: 11px;
+    height: 12.5px;
+    left: 30px;
+    bottom: -12px;
+  }
+  .invest_volun_container .message_box .right::before{
+    width: 3px;
+    height: 11px;
+    bottom: -12px;
+    right: 28px;
+  }
+  .invest_volun_container .message_box .right::after{
+    width: 11px;
+    height: 12.5px;
+    right: 30px;
+    bottom: -12px;
+  }
+  .compulsory_container .message_box::before{
+    width: 67.5px;
+    height: 35px;
+    background-size: contain;
+    bottom: -50px;
+    left: -30px;
+  }
+  .voluntary_container{
+    margin-top: 75px;
+  }
+  .voluntary_container .message_box::after{
+    width: 66px;
+    height: 50px;
+    background-size: contain;
+    right: -41px;
+    bottom: -60px;
+  }
+  .invest_volun_container .message_ttl,
+  .invest_volun_container .message_content{
+    font-size: 14px;
+  }
+  .invest_volun_container .message_ttl{
+    width: 100px;
+    margin: 0 auto 15px;
+    border-radius: 7.5px;
+    padding: 5px 0 2px;
+  }
 }
 
 /* tax audit end */
