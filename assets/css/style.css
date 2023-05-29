@@ -611,14 +611,14 @@ inherit_specialist_sec end =============== */
 
 /* audits come section start */
 
-.audits-come-sec {
+.audits_come_sec {
     display: block;
     background-color: var(--bg-gray);
     margin-bottom: 50px;
     position: relative;
 }
 
-.audits-come-sec::before {
+.audits_come_sec::before {
     position: absolute;
     content: '';
     width: 260px;
@@ -630,19 +630,19 @@ inherit_specialist_sec end =============== */
     clip-path: polygon(100% 0, 0 0, 50% 100%);
 }
 
-.audits-come-sec .audits-come-inner {
+.audits_come_sec .audits_come_inner {
     padding: 110px 15px 60px 15px;
-    /* border: 1px solid red; */
+   
     max-width: 950px;
     margin: 0 auto;
 }
 
-.audits-come-sub-inner {
+.audits_come_sub_inner {
     padding: 0px 15px;
-    /* outline: 1px solid blue; */
+   
 }
 
-.audits-come-sub-inner .audit-come-title {
+.audits_come_sub_inner .audit_come_title {
     font-size: 40px;
     margin: 0 auto;
     font-weight: bold;
@@ -650,74 +650,75 @@ inherit_specialist_sec end =============== */
     margin-bottom: 40px;
 }
 
-.audits-come-sub-inner ol {
+.audits_come_sub_inner ol {
     list-style-type: disc;
     font-size: 16px;
-    /* font-weight: bold; */
     margin-top: 65px;
+    padding-left: 15px;
 }
 
-.audits-com-triangles {
+.audits_com_triangles {
     display: flex;
     gap: 15px;
     padding-right: 42px;
+  
 }
 
-.audits-com-triangles .trg {
+.audits_com_triangles .trg {
     font-size: 20px;
     font-weight: bold;
-    /* border: 1px solid blue; */
+  
     position: relative;
     width: calc((100% - 42px)/4);
     padding-left: 50px;
-    padding: 50px 0px 45px 50px;
+    padding: 50px 0px 45px 6%;
     vertical-align: middle;
     background-color: #fff;
     /* clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%); */
 }
 
-.audits-com-triangles .trg:nth-child(2) {
+.audits_com_triangles .trg:nth-child(2) {
     background-color: #f2dddd;
 }
 
-.audits-com-triangles .trg:nth-child(3) {
+.audits_com_triangles .trg:nth-child(3) {
     background-color: #e4bdbb;
 }
 
-.audits-com-triangles .trg:nth-child(4) {
+.audits_com_triangles .trg:nth-child(4) {
     background-color: #d9a3a3;
 }
 
-.audits-com-triangles .trg:not(:first-child) {
-    padding-left: 85px;
+.audits_com_triangles .trg:not(:first-child) {
+    padding-left: 10%;
 }
 
-.audits-com-triangles .trg::after {
+.audits_com_triangles .trg::after {
     position: absolute;
     content: '';
-    height: 100%;
+    height: calc((100% + 2px));
     width: 42px;
     background-color: inherit;
     right: -41px;
-    top: 0;
+    top: -1px;
     clip-path: polygon(100% 50%, 0 0, 0 100%);
     z-index: 10;
 }
 
-.audits-com-triangles .trg:not(:first-child)::before {
+.audits_com_triangles .trg:not(:first-child)::before {
     position: absolute;
     content: '';
     height: 100%;
     width: 42px;
     background-color: var(--bg-gray);
-    left: 0px;
+    left: -1px;
     top: 0;
     clip-path: polygon(100% 50%, 0 0, 0 100%);
 }
 
-.audits-com-triangles .trg span {
+.audits_com_triangles .trg span {
     font-size: 16px;
-    /* border: 1px solid red; */
+
     position: absolute;
     display: block;
     width: 100%;
@@ -725,6 +726,141 @@ inherit_specialist_sec end =============== */
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.d_mid {
+    display: none;
+}
+
+
+@media screen and (max-width : 768px) {
+    .audits_come_sub_inner .audit_come_title {
+        font-size: 30px;
+    }
+
+    .audits_com_triangles .trg {
+        font-size: 18px;
+        padding: 35px 0px 30px 7%;
+    }
+
+    .audits_com_triangles .trg span {
+        font-size: 14px;
+    }
+
+    .audits_come_sub_inner ol {
+        font-size: 15px;
+    }
+
+    .audits_come_sec .audits_come_inner {
+        padding: 90px 15px 50px 15px;
+    }
+}
+
+@media screen and (max-width : 720px) {
+    .d_mid {
+        display: block;
+    }
+
+    .audits_com_triangles .trg {
+        padding: 25px 0px 20px 7%;
+    }
+
+    .audits_com_triangles .trg:not(:first-child) {
+
+        padding-left: 12%;
+    }
+
+    .audits_come_sec .audits_come_inner {
+        padding: 70px 15px 40px 15px;
+    }
+
+    .audits_come_sec::before {
+        width: 220px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width : 640px) {
+    .audits_come_sub_inner .audit_come_title {
+        font-size: 20px;
+    }
+
+    .audits_come_sec .audits_come_inner {
+        padding: 65px 15px 40px 15px;
+    }
+
+    .audits_come_sub_inner .audit_come_title {
+        margin-bottom: 20px;
+    }
+
+    .audits_come_sec::before {
+        width: 130px;
+        height: 30px;
+    }
+
+    .audits_com_triangles .trg {
+        font-size: 14px;
+        padding: 11px 0px 6px 7%;
+    }
+
+    .audits_com_triangles .trg:not(:first-child) {
+        /* padding-left: 85px; */
+        padding-left: 10%;
+    }
+
+    .audits_com_triangles .trg span {
+        font-size: 10px;
+    }
+
+    .audits_come_sub_inner ol {
+        font-size: 14px;
+    }
+
+    .audits_come_sub_inner {
+        padding: 0px;
+    }
+
+    .audits_com_triangles .trg::after {
+        width: 30px;
+        right: -29px;
+    }
+
+    .audits_com_triangles .trg:not(:first-child)::before {
+
+        width: 30px;
+
+    }
+
+    .audits_com_triangles {
+        padding-right: 10px;
+    }
+
+    .audits_com_triangles .trg:first-child {
+        width: calc((100% - 45px)/4 + 10px);
+    }
+
+    .audits_com_triangles {
+        gap: 5px;
+    }
+
+    .audits_com_triangles .trg {
+        width: calc((100% - 45px)/4);
+    }
+
+    .audits_com_triangles .trg span {
+        bottom: -20px;
+    }
+
+    .audits_come_sub_inner ol {
+        margin-top: 45px;
+    }
+
+}
+
+@media screen and (max-width : 380px) {
+    .audits_com_triangles .trg span {
+        bottom: -35px;
+    }
 }
 
 /* audits come section end */
