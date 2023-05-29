@@ -1009,120 +1009,7 @@ inherit_specialist_sec end =============== */
     }
 }
 
-/* audits come section end */
-/* .audits-come-sec {
-  display: block;
-  background-color: var(--bg-gray);
-  margin-bottom: 50px;
-  position: relative;
-}
 
-.audits-come-sec::before {
-  position: absolute;
-  content: "";
-  width: 260px;
-  height: 60px;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  clip-path: polygon(100% 0, 0 0, 50% 100%);
-}
-
-.audits-come-sec .audits-come-inner {
-  padding: 110px 15px 60px 15px;
-
-  max-width: 950px;
-  margin: 0 auto;
-}
-
-.audits-come-sub-inner {
-  padding: 0px 15px;
- 
-}
-
-.audits-come-sub-inner .audit-come-title {
-  font-size: 40px;
-  margin: 0 auto;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.audits-come-sub-inner ol {
-  list-style-type: disc;
-  font-size: 16px;
-  margin-top: 65px;
-}
-
-.audits-com-triangles {
-  display: flex;
-  gap: 15px;
-  padding-right: 42px;
-}
-
-.audits-com-triangles .trg {
-  font-size: 20px;
-  font-weight: bold;
-  position: relative;
-  width: calc((100% - 42px) / 4);
-  padding-left: 50px;
-  padding: 50px 0px 45px 50px;
-  vertical-align: middle;
-  background-color: #fff;
-}
-
-.audits-com-triangles .trg:nth-child(2) {
-  background-color: #f2dddd;
-}
-
-.audits-com-triangles .trg:nth-child(3) {
-  background-color: #e4bdbb;
-}
-
-.audits-com-triangles .trg:nth-child(4) {
-  background-color: #d9a3a3;
-}
-
-.audits-com-triangles .trg:not(:first-child) {
-  padding-left: 85px;
-}
-
-.audits-com-triangles .trg::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 42px;
-  background-color: inherit;
-  right: -41px;
-  top: 0;
-  clip-path: polygon(100% 50%, 0 0, 0 100%);
-  z-index: 10;
-}
-
-.audits-com-triangles .trg:not(:first-child)::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 42px;
-  background-color: var(--bg-gray);
-  left: 0px;
-  top: 0;
-  clip-path: polygon(100% 50%, 0 0, 0 100%);
-}
-
-.audits-com-triangles .trg span {
-  font-size: 16px;
-  position: absolute;
-  display: block;
-  width: 100%;
-  bottom: -35px;
-  text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-
-/* audits come section end */
 
 /* Ph Block */
 .contact_box .ph_block {
@@ -1227,3 +1114,108 @@ inherit_specialist_sec end =============== */
     background: url(../img/right_arr_white.png) top center no-repeat;
     background-size: cover;
 }
+
+
+
+
+/* example section start */
+
+.example_sec {
+    padding: 50px 15px;
+    background-color: var(--bg-gray);
+}
+
+.example_sec_inner {
+    max-width: 920px;
+    padding: 0px 10px 0px 10px;
+    /* outline: 1px solid red; */
+    margin: 0 auto;
+}
+
+.example_sec .exam_ttl {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.example_accordion {
+    margin-top: 40px;
+}
+
+.accor_item {
+    /* border: 1px solid green; */
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.example_accordion .accor_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.accor_title .circle_num {
+    background-color: #d28482;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+
+.accor_title .circle_num span {
+    display: block;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding-top: 5px;
+}
+
+
+
+.accor_title_txt {
+    flex: 1;
+}
+
+.accor_title_txt p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.accor_title_txt span {
+    font-size: 16px;
+}
+
+.accor_inner_content {
+    padding-top: 30px;
+}
+
+.accor_inner_content .instruct {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.instruct .instruct_man {
+    flex-basis: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid royalblue;
+}
+
+.instruct_man p {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+/* example section end */
