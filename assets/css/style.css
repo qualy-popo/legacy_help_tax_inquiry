@@ -1283,6 +1283,10 @@ inherit_specialist_sec start =============== */
 
 }
 
+.accor_item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
 .example_accordion .accor_title {
     display: flex;
     align-items: center;
@@ -1335,20 +1339,138 @@ inherit_specialist_sec start =============== */
     display: flex;
     align-items: flex-start;
     gap: 40px;
+    font-size: 16px;
 }
+
+.accor_inner_content .instruct:not(:last-child) {
+    margin-bottom: 40px;
+}
+
 
 .instruct .instruct_man {
     flex-basis: 125px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid royalblue;
+    /* border: 1px solid royalblue; */
+    position: relative;
 }
 
 .instruct_man p {
     background-color: #000;
     color: #fff;
     width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px 0px 6px 0px;
+    margin-top: -20px;
+}
+
+
+
+.red_btns_group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.instruct_info {
+    padding: 20px 15px;
+    border-radius: 10px;
+    flex: 1;
+    position: relative;
+}
+
+
+.instruct_info.bg-gray {
+    background-color: #faf7f7;
+}
+
+.instruct_info.bg-red-pale {
+    background-color: #eacdc8;
+}
+
+.instruct_info::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: inherit;
+    top: 20px;
+    left: -24px;
+}
+
+.red_btns_group .plus_btn {
+    width: 36px;
+    height: 36px;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red_btns_group .red_btn {
+    color: #fff;
+    background-color: var(--red);
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.red_btns_group .red_btn.large {
+    flex: 1;
+}
+
+.red_btns_group .red_btn.small {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.accor_inner_content .infoss {
+    padding: 15px 20px;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.accor_inner_content .infoss p:first-child {
+    margin-bottom: 10px;
+}
+
+.accor_inner_content .red_color {
+    color: var(--red);
+}
+
+.accor_inner_content .tri_arr,
+.accor_inner_content .instruct.tri_arr {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+
+.accor_inner_content .tri_arr::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 20px;
+    background-color: var(--red);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.accor_item_2 .lg_padding {
+    padding-block: 30px;
+}
+
+.accor_item_2 .red_btn.large {
+    max-width: 360px;
 }
 
 /* example section end */
