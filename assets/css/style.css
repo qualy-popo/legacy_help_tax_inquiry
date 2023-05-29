@@ -116,7 +116,11 @@ inherit_specialist_sec start =============== */
 }
 
 .btn_txt_block {
-    padding: 80px 20px;
+    padding: 70px 20px 30px;
+}
+
+.btn_block {
+    padding-bottom: 40px;
 }
 
 .upper_red_txt {
@@ -126,21 +130,62 @@ inherit_specialist_sec start =============== */
     color: var(--red);
 }
 
+.point_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.point_01,
+.point_02,
+.point_03 {
+    justify-self: center;
+    height: 280px;
+    padding: 0 10px;
+}
+
 .point_list .upper_txt {
-    max-width: 260px;
+    width: 260px;
     height: 260px;
     background: #fff;
     border-radius: 50%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .point_list .upper_txt p {
     text-align: center;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 50%);
     font-weight: bold;
+}
+
+.point_list .lower_txt {
+    position: relative;
+    max-width: 80px;
+    height: 80px;
+    background-color: #d28482;
+    border-radius: 50%;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point_list .lower_txt p {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.point_list .upper_txt span {
+    color: var(--red);
+}
+
+.point_list .upper_txt .no {
+    font-size: 40px;
+}
+
+.point_list .upper_txt .txt {
+    font-size: 30px;
 }
 
 .upper_red_txt .txt_01,
@@ -152,6 +197,29 @@ inherit_specialist_sec start =============== */
 .upper_red_txt .txt_02 span {
     padding: 0 10px;
     background: linear-gradient(0deg, #f2dddd 50%, transparent 0%);
+}
+
+@media screen and (max-width: 912px) {
+    .point_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .point_01,
+    .point_02,
+    .point_03 {
+        justify-self: center;
+    }
+
+    .point_01 {
+        grid-column: 1/3;
+    }
+
+    .point_02,
+    .point_03 {
+        grid-row: 2;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -200,10 +268,47 @@ inherit_specialist_sec start =============== */
     .btn_txt_block {
         padding: 40px 20px;
     }
+
+    .point_01,
+    .point_02,
+    .point_03 {
+        height: 160px;
+    }
+
+    .point_list .upper_txt {
+        width: 150px;
+        height: 150px;
+    }
+
+    .point_list .upper_txt p {
+        font-size: 14px;
+    }
+
+    .point_list .upper_txt .no {
+        font-size: 25px;
+    }
+
+    .point_list .upper_txt .txt {
+        font-size: 16px;
+    }
+
+    .point_list .lower_txt {
+        max-width: 50px;
+        height: 50px;
+        bottom: 40px;
+    }
+
+    .point_list .lower_txt p {
+        font-size: 10px;
+    }
+
+    .point_list .lower_txt p span {
+        font-size: 14px;
+    }
 }
 
 /* ========================================
-inherit_specialist_sec end =============== */
+  inherit_specialist_sec end =============== */
 
 /* common styles */
 
@@ -438,15 +543,13 @@ inherit_specialist_sec end =============== */
 .audit_btn_gp {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 3%;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .audit_btn_gp .audit_btn {
-    /* width: 22%; */
-    flex-grow: 1;
+    width: calc((100% - 30px) / 4);
     position: relative;
     font-size: 20px;
     text-align: center;
@@ -512,133 +615,18 @@ inherit_specialist_sec end =============== */
 
 .invest_volun_container {
     display: flex;
+    gap: 30px;
+    justify-content: space-between;
 }
 
 .compulsory_container,
 .voluntary_container {
-    width: 50%;
+    width: calc((100% - 30px) / 2);
 }
 
 .invest_volun_container .message_box {
     position: relative;
     max-width: 360px;
-    margin: 0 auto;
-    padding: 20px 0;
-    border-radius: 10px;
-    background: #faf7f7;
-    border-bottom: 5px solid var(--red);
-    border-right: 5px solid var(--red);
-}
-
-.invest_volun_container .message_box .left::after {
-    position: absolute;
-    content: '';
-    width: 22px;
-    height: 25px;
-    left: 60px;
-    bottom: -23px;
-    background: #faf7f7;
-    clip-path: polygon(0 0, 0% 100%, 100% 0);
-}
-
-.invest_volun_container .message_box .right::after {
-    position: absolute;
-    content: '';
-    width: 22px;
-    height: 25px;
-    right: 60px;
-    bottom: -23px;
-    background: #faf7f7;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
-}
-
-.invest_volun_container .message_ttl {
-    width: 200px;
-    padding: 5px 0 0;
-    margin: 0 auto 15px;
-    text-align: center;
-    background: var(--red);
-    border-radius: 15px;
-    color: var(--white);
-    font-size: 24px;
-}
-
-.invest_volun_container .message_content {
-    font-size: 20px;
-    text-align: center;
-}
-
-.invest_volun_container .message_content>span {
-    font-weight: bold;
-}
-
-.compulsory_container .message_box::before {
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: -100px;
-    left: -75px;
-    background: url(../img/compulsory_img.png);
-    width: 135px;
-    height: 70px;
-}
-
-.voluntary_container .message_box::after {
-    display: block;
-    content: "";
-    position: absolute;
-    right: -82px;
-    bottom: -120px;
-    background: url(../img/voluntary_img.png);
-    width: 132px;
-    height: 100px;
-}
-
-.tax_audit_txt {
-    margin: 60px 0;
-}
-
-.audit_ttl {
-    font-size: 40px;
-    font-weight: 400;
-    text-align: center;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.audit_ttl::before {
-    content: "";
-    position: absolute;
-    background: url(../img/audit_left_line.png);
-    width: 34px;
-    height: 58px;
-}
-
-.audit_ttl::after {}
-
-.audit_content {
-    font-size: 16px;
-    text-align: center;
-}
-
-.audit_content>span {
-    font-size: 20px;
-    color: var(--red);
-}
-
-.invest_volun_container {
-    display: flex;
-}
-
-.compulsory_container,
-.voluntary_container {
-    width: 50%;
-}
-
-.invest_volun_container .message_box {
-    position: relative;
-    max-width: 360px;
-    margin: 0 auto;
     padding: 20px 0;
     border-radius: 10px;
     background: #faf7f7;
@@ -716,10 +704,14 @@ inherit_specialist_sec end =============== */
     content: "";
     position: absolute;
     bottom: -100px;
-    left: -75px;
+    left: -65px;
     background: url(../img/compulsory_img.png);
     width: 135px;
     height: 70px;
+}
+
+.compulsory_container .message_box {
+    margin-left: auto;
 }
 
 .voluntary_container .message_box::after {
@@ -733,11 +725,90 @@ inherit_specialist_sec end =============== */
     height: 100px;
 }
 
-.tax_audit_txt {
-    margin: 60px 0 30px;
+@media screen and (max-width: 920px) {
+    .compulsory_container .message_box::before {
+        bottom: -90px;
+        left: 0px;
+        width: 100px;
+        height: 55px;
+        background-size: contain;
+    }
+
+    .voluntary_container .message_box::after {
+        width: 100px;
+        height: 70px;
+        right: 0;
+        bottom: -100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .invest_volun_container .message_ttl {
+        font-size: 22px;
+    }
+
+    .invest_volun_container .message_content {
+        font-size: 18px;
+        letter-spacing: -0.4px;
+    }
 }
 
 @media screen and (max-width : 640px) {
+    .tax_audit_wrapper {
+        padding: 40px 15px;
+        margin: 0 auto 40px;
+    }
+
+    .audit_btn_gp {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .audit_btn_gp .audit_btn {
+        width: calc((100% - 25px) / 2);
+        font-size: 14px;
+        padding: 10px 0 7.5px;
+    }
+
+    .audit_btn_gp .audit_btn::after {
+        width: 7.5px;
+        height: 5px;
+        right: 20px;
+        top: 17px;
+        background-size: contain;
+    }
+
+    .tax_audit_txt {
+        margin: 30px 0;
+    }
+
+    .audit_ttl {
+        font-size: 20px;
+        margin: 0 auto 15px;
+    }
+
+    .audit_ttl::before {
+        bottom: 5px;
+        left: -45px;
+        width: 17px;
+        height: 29px;
+    }
+
+    .audit_ttl::after {
+        bottom: 5px;
+        right: -40px;
+        width: 17px;
+    }
+
+    .audit_content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .audit_content>span {
+        font-size: 16px;
+    }
+
     .invest_volun_container {
         display: block;
     }
@@ -747,9 +818,71 @@ inherit_specialist_sec end =============== */
         width: 100%;
     }
 
+    .invest_volun_container .message_box {
+        width: 260px;
+        margin: 0 auto;
+        border-bottom: 2.5px solid var(--red);
+        border-right: 2.5px solid var(--red);
+    }
+
+    .invest_volun_container .message_box .left::before {
+        width: 4px;
+        height: 15px;
+        bottom: -14px;
+        left: 32px;
+    }
+
+    .invest_volun_container .message_box .left::after {
+        width: 11px;
+        height: 12.5px;
+        left: 30px;
+        bottom: -12px;
+    }
+
+    .invest_volun_container .message_box .right::before {
+        width: 3px;
+        height: 11px;
+        bottom: -12px;
+        right: 28px;
+    }
+
+    .invest_volun_container .message_box .right::after {
+        width: 11px;
+        height: 12.5px;
+        right: 30px;
+        bottom: -12px;
+    }
+
     .compulsory_container .message_box::before {
         width: 67.5px;
         height: 35px;
+        background-size: contain;
+        bottom: -50px;
+        left: -30px;
+    }
+
+    .voluntary_container {
+        margin-top: 75px;
+    }
+
+    .voluntary_container .message_box::after {
+        width: 66px;
+        height: 50px;
+        background-size: contain;
+        right: -41px;
+        bottom: -60px;
+    }
+
+    .invest_volun_container .message_ttl,
+    .invest_volun_container .message_content {
+        font-size: 14px;
+    }
+
+    .invest_volun_container .message_ttl {
+        width: 100px;
+        margin: 0 auto 15px;
+        border-radius: 7.5px;
+        padding: 5px 0 2px;
     }
 }
 
