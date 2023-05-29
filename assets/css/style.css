@@ -126,21 +126,60 @@ inherit_specialist_sec start =============== */
   color: var(--red);
 }
 
+.point_list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.point_01,.point_02,.point_03{
+	justify-self:center;
+    height: 280px;
+    padding: 0 10px;
+}
+
 .point_list .upper_txt {
-  max-width: 260px;
-  height: 260px;
-  background: #fff;
-  border-radius: 50%;
-  position: relative;
+    width: 260px;
+    height: 260px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .point_list .upper_txt p {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  bottom: 50%;
-  transform: translate(-50%, 50%);
-  font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+}
+
+.point_list .lower_txt {
+    position: relative;
+    max-width: 80px;
+    height: 80px;
+    background-color: #d28482;
+    border-radius: 50%;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point_list .lower_txt p {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.point_list .upper_txt span{
+    color: var(--red);
+}
+
+.point_list .upper_txt .no {
+    font-size: 40px;
+}
+
+.point_list .upper_txt .txt{
+    font-size: 30px;
 }
 
 .upper_red_txt .txt_01,
@@ -152,6 +191,26 @@ inherit_specialist_sec start =============== */
 .upper_red_txt .txt_02 span {
   padding: 0 10px;
   background: linear-gradient(0deg, #f2dddd 50%, transparent 0%);
+}
+
+@media screen and (max-width: 912px) {
+    .point_list {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .point_01,.point_02,.point_03{
+        justify-self:center;
+    }
+    
+    .point_01{
+        grid-column: 1/3;
+    }
+    
+    .point_02,.point_03{
+        grid-row: 2;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -199,6 +258,41 @@ inherit_specialist_sec start =============== */
 
   .btn_txt_block {
     padding: 40px 20px;
+  }
+
+  .point_01, .point_02, .point_03{
+	height: 160px;
+  }
+
+  .point_list .upper_txt{
+    width: 150px;
+    height: 150px;
+  }
+
+  .point_list .upper_txt p{
+    font-size:14px;
+  }
+
+  .point_list .upper_txt .no {
+    font-size: 25px;
+  }
+
+  .point_list .upper_txt .txt {
+    font-size: 16px;
+  }
+
+  .point_list .lower_txt {
+    max-width: 50px;
+    height: 50px;
+    bottom: 40px;
+  }
+
+  .point_list .lower_txt p{
+	font-size:10px;
+  }
+
+  .point_list .lower_txt p span{
+	font-size:14px;
   }
 }
 
