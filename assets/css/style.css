@@ -86,7 +86,7 @@ inherit_specialist_sec start =============== */
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    /* padding: 0 20px; */
+    padding: 0 15px;
   }
   
   .inherit_flex_list .list_01,
@@ -241,6 +241,7 @@ inherit_specialist_sec start =============== */
   
     .inherit_flex_list {
       display: block;
+      padding: 0;
     }
   
     .inherit_flex_list .list_01,
@@ -529,7 +530,9 @@ inherit_specialist_sec start =============== */
 
     .mv-sp {
         max-width: 380px;
-        padding: 25px 20px 40px 20px;
+        padding: 25px 35px 40px 35px;
+        font-size: 14px;
+        font-weight: bold;
     }
 
     .info_btns .mv_btn {
@@ -1690,9 +1693,19 @@ inherit_specialist_sec start =============== */
 	padding: 15px 15px 60px;
 }
 
+.service_flow_sec .sub_container{
+    padding: 0 15px;
+}
+
 .service_flow_sec .container{
 	max-width:920px;
 	margin:0 auto;
+}
+
+@media screen and (max-width:640px){
+    .service_flow_sec .sub_container{
+        padding: 0px;
+    }
 }
 
 /* service flow sec end */
